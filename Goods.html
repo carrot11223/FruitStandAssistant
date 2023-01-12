@@ -1,0 +1,61 @@
+<!--由于H5的自适应，对于设置高度不起作用，但此处只是做一个简单的计算，因此笔者采取H4-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水果摊位的简易算账小工具</title>
+    <link rel="stylesheet" href="css/Goods.css">
+    <script type="text/javascript" src="js/Good.js"></script>
+</head>
+<body>
+<!--版心盒子-->
+<div id="div_container">
+<!--放置表格的盒子 -->
+    <div id="div_fruit_lists">
+<!--水果表 表格内数据均为模拟数据，不涉及数据库的操作-->
+            <table id="tbl_fruit">
+                <tr>
+                    <th>果名</th><th>单价(元/斤)</th><th>重量(斤)</th><th>小计(元)</th><th>删除水果</th>
+                </tr>
+                <tr >
+                    <td>橙子</td><td>7</td><td>1</td><td>7</td><td><img src="imgs/del.jpg"></td>
+                </tr>
+                <tr>
+                    <td>苹果</td><td>8</td><td>3</td><td>24</td><td><img src="imgs/del.jpg"></td>
+                </tr>
+                <tr>
+                    <td>香蕉</td><td>6</td><td>3</td><td>18</td><td><img src="imgs/del.jpg"></td>
+                </tr>
+                <tr>
+                    <td>龙眼</td><td>9</td><td>2</td><td>18</td><td><img src="imgs/del.jpg"></td>
+                </tr>
+                <tr>
+                    <td>橘子</td><td>5</td><td>3</td><td>15</td><td><img src="imgs/del.jpg"></td>
+                </tr>
+                <tr>
+                    <td>梨</td><td>7</td><td>4</td><td>28</td><td><img src="imgs/del.jpg"></td>
+                </tr>
+                <tr>
+                    <td>柚子</td><td>10</td><td>1</td><td>10</td><td><img src="imgs/del.jpg"></td>
+                </tr>
+                <tr>
+                    <td>总计</td><td colspan="4">999</td>
+                </tr>
+                <tr>
+                    <td>增补</td><td colspan="4">添加</td>
+                </tr>
+            </table>
+<!--表单，进行补增货物-->
+        <div id="div_add">
+            <form name="form_fruit">
+                果名：<input type="text" size="4" name="fruitName"><br>
+                单价：<input type="text" size="4" name="fruitPrice"><br>
+                重量：<input type="text" size="4" name="fruitWeight"><br>
+                <br>
+                    <input type="button" value="提交" name="submit">
+            </form>
+        </div>
+        </div>
+
+</div>
+</body>
+</html>
